@@ -5,9 +5,9 @@ Es una de las placas pertenecientes a la primera tirada realizada en [FPGAWars](
 Vamos a explorar las nuevas posibilidades no documentadas de la placa y llevarla al límite cuando sea posible. Para ello nos basaremos en los _datasheet_ de los circuitos integrados que la componen.
 Los primeros progresos se han obtenido en la _reconfiguración_ de la FPGA (iCE40HX) que es el corazón de la ___iceZUM Alhambra___.
 
-El chip iCE40HX de _Lattice_ es una FPGA volátil, es decir, al perder la alimentación, pierde su configuración interna de conexiones que conforman el circuito, es por eso que necesita de una PROM (Programable ROM, chip tipo _flash_) donde guardar dicha configuración (_bitstream_) y descargarla en la FPGA cada vez que se produce un _"hard-reset"_.
+El chip iCE40HX de _Lattice_ es una FPGA volátil, es decir, al perder la alimentación, pierde su configuración interna de conexiones que conforman el circuito, es por eso que necesita de una PROM (Programable ROM) donde guardar dicha configuración (_bitstream_) y descargarla en la FPGA cada vez que se produce un _"hard-reset"_.
 
-Este chip de memoria flash (el chip _N25Q032A_) se comunica vía SPI con la FPGA y el FTDI (_FT2232H_, interfaz con el USB del PC).
+Este chip PROM en la **_iceZUM Alhambra_** es una memoria tipo flash (el chip _N25Q032A_) se comunica vía SPI con la FPGA y el FTDI (_FT2232H_, interfaz con el USB del PC).
 
 > Incluir gráfico del esquema.
 
@@ -19,6 +19,6 @@ Sim embargo, es el chip _iCE40HX_ el que nos da la posibilidad de dar un uso inm
 
 Para acceder al código, las pruebas y una mayor información, sigue los siguientes enlaces.
 
-- [***Cold Boot***](https://github.com/juanmard/icezum/CoolBoot)
-- [***Warm Boot***](https://github.com/juanmard/icezum/WarmBoot)
+- [***Cold Boot***](https://github.com/juanmard/icezum/tree/master/ColdBoot)
+- [***Warm Boot***](https://github.com/juanmard/icezum/tree/master/WarmBoot)
 
